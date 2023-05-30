@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/tsxt.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Register Student</h5>
+                      <form action="/" method="POST">
+
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">user name</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="books">
+                          
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">select course</label>
+                          <select class="form-select" aria-label="Default select example" id="exampleInputPassword1" name="courses">
+                            
+                            <option value="python">python</option>
+                            <option value="web_develpement">web developement</option>
+                            <option value="tally">tally</option>
+                          </select>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                      
+                    </div>
+                  </div>
+
+            </div>
+            <div class="col-9">
+                <table class="table table-info table-striped">
+                    <tr>
+                        <th>Sno</th>
+                        <th>Student Name</th>
+                        <th>Student course</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                    {% for stud in course1 %}
+                    <tr>
+                        <td>{{ stud.sno }}</td>
+                        <td>{{ stud.student_name }}</td>
+                        <td>{{ stud.student_course }}</td>
+                        <td>{{ stud.student_status }}</td>
+                        <td><a href="">update</a>
+                            <a href="">update</a></td>
+                    </tr>
+                    {% endfor %}
+                </table>
+
+            </div>
+        </div>
+       
+    </div>
+    <script src="/static/js/bootstrap.min.js">
+
+    </script>
+    
+</body>
+</html>

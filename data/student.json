@@ -1,0 +1,16 @@
+{
+   "students": [
+      {
+         "sno": 1,
+         "student_name": "sam",
+         "student_course": "web_develpement",
+         "student_status": "open"
+      },
+      {
+         "sno": 2,
+         "student_name": "arun",
+         "student_course": "python",
+         "student_status": "open"
+      }
+   ]
+}
