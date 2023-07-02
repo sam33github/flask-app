@@ -11,6 +11,30 @@
          "student_name": "arun",
          "student_course": "python",
          "student_status": "open"
+      },
+      {
+         "sno": 3,
+         "student_name": "arun",
+         "student_course": "python",
+         "student_status": "open"
+      },
+      {
+         "sno": 4,
+         "student_name": "sam",
+         "student_course": "Tally",
+         "student_status": "Complete"
+      },
+      {
+         "sno": 5,
+         "student_name": "s",
+         "student_course": "python",
+         "student_status": "open"
+      },
+      {
+         "sno": 6,
+         "student_name": "sakthi",
+         "student_course": "python",
+         "student_status": "open"
       }
    ]
 }

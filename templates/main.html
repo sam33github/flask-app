@@ -55,8 +55,8 @@
                         <td>{{ stud.student_name }}</td>
                         <td>{{ stud.student_course }}</td>
                         <td>{{ stud.student_status }}</td>
-                        <td><a href="">update</a>
-                            <a href="">update</a></td>
+                        <td><a href="/update/{{stud.sno}}">update</a>
+                            <a href="/delete/{{stud.sno}}">delete</a></td>
                     </tr>
                     {% endfor %}
                 </table>
