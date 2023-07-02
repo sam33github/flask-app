@@ -2,6 +2,7 @@ from flask import Flask,render_template,request, redirect
 import json_utilies
 import register
 import update
+import delete
 
 app=Flask(__name__)
 @app.route("/",methods=["POST","GET"])
@@ -37,7 +38,9 @@ def update_stud(id):
 
 @app.route("/delete/<int:id>",methods=["POST","GET"])
 def delete_stud(id):
-    pass
+    if request.method=="GET":
+        delete.delete(int(id))
+    return redirect('/')
 
     
 if __name__=="__main__":
